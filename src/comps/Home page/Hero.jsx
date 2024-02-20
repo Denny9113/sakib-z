@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef, useState } from 'react'
-import img from './img.avif'
+import img from './profile.jpg'
 import LinkedIn from '../SVJ\'s/LinkedIn'
 import Git from '../SVJ\'s/Git'
 import Html from '../SVJ\'s/Html'
