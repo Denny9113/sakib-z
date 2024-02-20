@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Synonym', sans-serif; */
+/* font-family: 'Amulya', sans-serif; */
+/* font-family: 'Bespoke Stencil', sans-serif */
+/* font-family: 'Gambarino', serif; */
+/* font-family: 'Kalam', cursive; */
+/* font-family: 'Sevillana', cursive; */
+
+body {
+    background-color: rgb(249 250 251);
+}
+
+.icon {
+    font-family: 'Bespoke Stencil', sans-serif;
+}
+
+.pro-img:hover {
+    cursor: url(./arrow-top-right-o.svg), pointer;
+}
+
+.list,
+.tagLine,
+.teckI,
+.button,
+.About-discription,
+.aboutMe,
+.input-text {
+    font-family: 'Synonym', sans-serif;
+
+}
+
+.heading,
+.techStack,
+.About-title {
+    /* font-family: 'Synonym', sans-serif; */
+    font-family: 'Amulya', sans-serif;
+}
+
+.img {
+    border-radius: 50%;
+    animation-name: anim;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+#circle span {
+    position: absolute;
+    transform-origin: 0px 100px;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav::after {
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    background-color: #2b6cb0;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav:hover::after {
+    width: 100%;
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+    }
+
+    10% {
+        border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+    }
+
+    20% {
+        border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+    }
+
+    30% {
+        border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+    }
+
+    40% {
+        border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+    }
+
+    50% {
+        border-radius: 100%;
+    }
+
+    60% {
+        border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+    }
+
+    70% {
+        border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+    }
+
+    80% {
+        border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+    }
+
+    90% {
+        border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+    }
+}
